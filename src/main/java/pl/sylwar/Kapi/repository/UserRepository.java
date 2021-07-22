@@ -9,6 +9,6 @@ import pl.sylwar.Kapi.model.User;
 public interface UserRepository extends CrudRepository<User,Long> {
 
     @Query("SELECT u FROM User u WHERE u.username = :username")
-    public User getUserByUsername(@Param("username")String username);
+    public User getUserByUsername(@Param("username") String username);
 
 }

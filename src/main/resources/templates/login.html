@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Kapi Task</title>
+</head>
+<body>
+<div>
+    <form th:action="@{/doLogin}" method="post" style="max-width: 400px; margin: 0 auto;">
+        <h1>Login to Kapi Task</h1>
+        <p>
+            E-mail: <input type="email" name="email" required>
+        </p>
+        <p>
+            Password: <input type="password" name="motdepass" required>
+        </p>
+        <p>
+            <input type="submit" value="Log Me In">
+        </p>
+
+    </form>
+
+</div>
+</body>
+</html>
